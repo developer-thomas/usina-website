@@ -1,49 +1,106 @@
-.home-section__center-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
+@import "../../../scss/fonts.scss";
 
-.center-container__content {
-  h1 {
-    font-size: 200px;
-    font-family: $usina-font;
+// Animação para flutuação
+@keyframes floatUp {
+  0% {
+    transform: translateY(0); /* Começa sem deslocamento */
   }
-  p {
-    font-size: 30px;
+  50% {
+    transform: translateY(-20px); /* Flutua para cima */
   }
-}
-.social-medias__icon img {
-  width: 50px;
-  height: 50px;
-}
-
-.arrow-down {
-  width: 60px;
-  height: 50px;
+  100% {
+    transform: translateY(0); /* Volta à posição inicial */
+  }
 }
 
 #home-section {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("../../../../assets/icons/teste.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  position: relative;
 }
-.bg-img {
-  background-image: url("../../../../assets/icons/teste2.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
-  z-index: 10;
-  position: absolute;
-  top: 16%;
 
+// Centraliza o conteúdo total da home-page ao centro
+.center-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+// Delimita os conteúdos do centro dentro de um container
+.center-container__content {
+  height: 90vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: white;
+
+  .content__texts {
+    h1 {
+      margin-top: 5rem;
+      font-size: 6.5rem;
+      font-family: $usina-font;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+}
+// Impede a quebra de layout do h1
+@media (min-width: 390px) {
+  .center-container__content .content__texts {
+    h1 {
+      font-size: 8rem;
+    }
+  }
+}
+
+@media (min-width: 564px) {
+  .center-container__content .content__texts {
+    h1 {
+      font-size: 13rem;
+    }
+  }
+}
+
+.social-medias {
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  a {
+    cursor: pointer;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin: 1.2rem 1.2rem 1.2rem 0;
+    }
+  }
+}
+
+.magic-button {
+  button {
+    padding: 15px;
+    color: white;
+    border-radius: 0 20px 0 20px;
+  }
+}
+
+.arrow-down {
+  animation: floatUp 2s ease-in-out infinite;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  img {
+    width: 60px;
+    height: 50px;
+  }
 }
