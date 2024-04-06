@@ -1,9 +1,16 @@
 @media (max-width: 991px) {
-  .about-container_info {
-    width: 100%;
+  .about-container__external {
+    width: 90%;
   }
 
-  .about-container_external .image-container {
+  .about-container__info {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .about-container__texts {
+    width: 100%;
+  }
+  .about-container__external .image-container {
     width: 100%;
     height: 100%;
     display: flex;

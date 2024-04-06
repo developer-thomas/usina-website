@@ -1,11 +1,19 @@
 <section id="about-section">
   <!-- Vai dividir duas divs filhas -->
-  <div class="about-container_external">
+  <div class="about-container__external">
     <!-- container de informações -->
-    <div class="about-container_info">
+    <div class="about-container__info">
       <div class="about-container__texts">
-        <h5>Sobre a Usina</h5>
-        <h1>Transformamos suas ideias em projetos reais</h1>
+        <h5>Sobre a <strong>Usina</strong></h5>
+        <h1>
+          Transformamos suas <strong>IDEIAS</strong> em projetos
+          <strong>REAIS</strong>
+          <img
+            class="emphasis-risk"
+            src="../../../../assets/about-icons/risk.png"
+            alt=""
+          />
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia
           molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora
@@ -85,8 +93,19 @@
     </div>
 
     <!-- container da imagem -->
-    <div class="image-container">
-      <img class="img-fluid" src="../../../../assets/about-img.png" alt="" />
+    <div
+      class="image-container"
+      (mousemove)="moveImage($event)"
+      (mouseout)="resetImage()"
+    >
+      <img
+        class="img-fluid imagem"
+        [style.transform]="
+          'translate(' + translateX + 'px, ' + translateY + 'px)'
+        "
+        src="../../../../assets/about-img.png"
+        alt=""
+      />
     </div>
   </div>
 </section>

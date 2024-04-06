@@ -14,23 +14,25 @@
 }
 
 // Vai dividir as divs filhas, define largura e centraliza
-.about-container_external {
+.about-container__external {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
-  // width: 90rem;
   margin: auto;
 }
 
-.about-container_info {
+// Container que delimita as informações desta pagina
+.about-container__info {
   width: 50%;
   margin-top: 7%;
 }
-
+// Textos de cima
 .about-container__texts {
+  position: relative;
   width: 70%;
-  h5 {
-    font-size: 1.7rem;
+
+  strong {
+    color: $text-primary;
   }
   h1 {
     margin: 20px 0 40px 0;
@@ -40,7 +42,32 @@
   p {
     font-size: 1.1rem;
     margin: 20px 0 40px 0;
+    color: $text-secondary;
   }
+
+  h5 {
+    display: inline;
+    font-size: 1.7rem;
+
+    &::before {
+      content: "●";
+      margin-right: 10px;
+      color: $text-primary;
+    }
+    &::after {
+      content: "●";
+      margin-left: 10px;
+      color: $text-primary;
+    }
+  }
+}
+
+.emphasis-risk {
+  width: 115px;
+  position: absolute;
+  // right: 34%;
+  // bottom: 22%;
+  transform: translate(-93%, -5%);
 }
 
 // 1200px quebra e fica um embaixo do outro
@@ -54,9 +81,16 @@
     flex-direction: row;
     width: 100%;
     margin: 10px 10px 10px 0;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
   }
-
+  .box-text {
+    h5 {
+      color: $text-primary;
+    }
+    p {
+      color: $text-secondary;
+    }
+  }
   .boxes-img {
     object-fit: contain;
     object-position: top;
@@ -66,16 +100,22 @@
     height: 100%;
     margin-right: 12px;
     background-color: #463c3c6c;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: rotateZ(360deg);
+    }
   }
 }
 
+// IMAGEM DA PESSOA NO PC A DIREITA
 .image-container {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   width: 50%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   .img-fluid {
     max-width: 90%;
