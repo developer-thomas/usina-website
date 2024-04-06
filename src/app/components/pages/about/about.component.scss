@@ -1,0 +1,87 @@
+@import "../../../scss/colors.scss";
+
+* {
+  color: white;
+}
+
+#about-section {
+  max-width: 100%;
+  height: 100%;
+  background: $bg-main;
+  background: $bg-gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Vai dividir as divs filhas, define largura e centraliza
+.about-container_external {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  // width: 90rem;
+  margin: auto;
+}
+
+.about-container_info {
+  width: 50%;
+  margin-top: 7%;
+}
+
+.about-container__texts {
+  width: 70%;
+  h5 {
+    font-size: 1.7rem;
+  }
+  h1 {
+    margin: 20px 0 40px 0;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 20px 0 40px 0;
+  }
+}
+
+// 1200px quebra e fica um embaixo do outro
+.about-container__boxes {
+  // display: flex;
+  // flex-wrap: wrap;
+  width: 100%;
+
+  .about-container__box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+    padding: 15px;
+  }
+
+  .boxes-img {
+    object-fit: contain;
+    object-position: top;
+    border-radius: 10px;
+    padding: 12px;
+    width: 70px;
+    height: 100%;
+    margin-right: 12px;
+    background-color: #463c3c6c;
+  }
+}
+
+.image-container {
+  margin-bottom: 10%;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .img-fluid {
+    max-width: 90%;
+    height: auto;
+    transform: scaleX(1);
+    object-fit: cover;
+    object-position: center;
+  }
+}

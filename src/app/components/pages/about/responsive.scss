@@ -1,0 +1,13 @@
+@media (max-width: 991px) {
+  .about-container_info {
+    width: 100%;
+  }
+
+  .about-container_external .image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
