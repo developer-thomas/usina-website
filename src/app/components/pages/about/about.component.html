@@ -93,11 +93,7 @@
     </div>
 
     <!-- container da imagem -->
-    <div
-      class="image-container"
-      (mousemove)="moveImage($event)"
-      (mouseout)="resetImage()"
-    >
+    <div class="image-container" (mousemove)="moveImage($event)">
       <img
         class="img-fluid imagem"
         [style.transform]="
