@@ -1,10 +1,15 @@
-$bg-main: #1b4332;
+// cores bases
+$bg-main: #14213d;
 $bg-second: #081c15;
-$bg-gradient: radial-gradient(
-  circle,
-  $bg-main 0%,
-  rgba(9, 8, 8, 0.9920343137254902) 100%
+$bg-third: #4a4e69;
+// gradients
+$bg-gradient: radial-gradient(circle, $bg-main 0%, $bg-second 100%);
+$bg-second-gradient: linear-gradient(
+  90deg,
+  rgba(20, 33, 61, 1) 0%,
+  rgba(8, 28, 21, 1) 35%
 );
 
+// textos
 $text-primary: #ffee32;
 $text-secondary: #d8f3dc;

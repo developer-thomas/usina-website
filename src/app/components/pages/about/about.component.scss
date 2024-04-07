@@ -9,8 +9,6 @@
   height: 100%;
   background: $bg-main;
   background: $bg-gradient;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 // Vai dividir as divs filhas, define largura e centraliza
@@ -110,7 +108,6 @@
 
 // IMAGEM DA PESSOA NO PC A DIREITA
 .image-container {
-  margin-bottom: 5%;
   width: 50%;
   height: 100vh;
   display: flex;

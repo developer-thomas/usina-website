@@ -1,0 +1,29 @@
+@media (max-width: 1300px) {
+  div.grid-box {
+    min-width: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  .services-container__external {
+    width: 90%;
+    margin-top: 5rem;
+  }
+  div.grid-box {
+    min-width: 49%;
+  }
+
+  .services-container__info {
+    width: 100%;
+  }
+
+  .services-container__texts {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  div.grid-box {
+    min-width: 100%;
+  }
+}
