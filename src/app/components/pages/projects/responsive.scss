@@ -1,0 +1,17 @@
+@media (max-width: 991px) {
+  .projects-container__external {
+    width: 90%;
+
+    .grid-box {
+      width: 49%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-container__external {
+    .grid-box {
+      width: 99%;
+    }
+  }
+}

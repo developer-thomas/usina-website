@@ -8,6 +8,19 @@
         voluptate repellendus.
       </p>
     </div>
-    <div class="projects-grid"></div>
+    <div class="projects-grid">
+      <div *ngFor="let item of visibleProjects" class="grid-box">
+        <a routerLink="/projetos/{{ item.id }}">
+          <img class="grid-box__img" src="{{ item.image }}" alt="" />
+        </a>
+      </div>
+    </div>
+    <button
+      *ngIf="imagensPorPagina < projects.length"
+      (click)="showMore()"
+      class="btn btn-danger"
+    >
+      Ver mais
+    </button>
   </div>
 </section>

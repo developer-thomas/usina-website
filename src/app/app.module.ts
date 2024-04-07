@@ -9,7 +9,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { WorksComponent } from './components/pages/works/works.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +17,10 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
     HomeComponent,
     AboutComponent,
     WorksComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
