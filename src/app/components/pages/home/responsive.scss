@@ -1,0 +1,27 @@
+// Impede a quebra de layout do h1
+@media (min-width: 390px) {
+  .center-container__content .content__texts {
+    h1 {
+      font-size: 8rem;
+    }
+  }
+}
+
+@media (min-width: 564px) {
+  .center-container__content .content__texts {
+    h1 {
+      font-size: 13rem;
+    }
+  }
+}
+
+@media (max-width: 661px) {
+  .center-container__content {
+    width: 90%;
+  }
+
+  .content__texts {
+    width: 90%;
+    object-fit: contain;
+  }
+}

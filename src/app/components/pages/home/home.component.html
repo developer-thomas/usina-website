@@ -1,11 +1,18 @@
 <section id="home-section">
+  <div class="banner">
+    <video #videoElement muted loop>
+      <source
+        src="../../../../assets/home/background-video-2.mp4"
+        type="video/mp4"
+        #video
+      />
+    </video>
+  </div>
+
   <div class="center-container">
     <div class="center-container__content">
       <div class="content__texts">
-        <h1>USINA</h1>
-        <div>
-          <p>Comunicação Visual</p>
-        </div>
+        <img src="../../../../assets/home/logo-home-teste2.png" alt="" />
       </div>
       <div class="social-medias">
         <a href="">
@@ -31,7 +38,9 @@
         </a>
       </div>
       <div class="magic-button">
-        <button class="btn btn-outline-secondary">Clique e Transforme</button>
+        <button (click)="playBackground()" class="btn btn-outline-secondary">
+          Clique aqui
+        </button>
       </div>
     </div>
 
