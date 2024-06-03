@@ -1,11 +1,38 @@
-.navbar {
-  width: 100vw;
-  a {
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 9;
+}
+
+ul {
+  list-style-type: none;
+
+  li {
+    padding: 10px;
   }
 }
 
-.top-menu {
+a {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  vertical-align: top;
+
+  text-justify: start;
+}
+
+.toggler-position {
+  display: none;
+}
+
+.nav-list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
 }

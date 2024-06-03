@@ -1,24 +1,10 @@
 // cores bases
-$bg-main: #14213d;
+$bg-main: rgba(20, 33, 61, 1);
 $bg-second: #081c15;
 $bg-third: #4a4e69;
 // gradients
 $bg-gradient: radial-gradient(circle, $bg-main 0%, $bg-second 100%);
-$bg-second-gradient: linear-gradient(
-  90deg,
-  rgba(20, 33, 61, 1) 0%,
-  rgba(8, 28, 21, 1) 35%
-);
 
 // textos
 $text-primary: #ffee32;
 $text-secondary: #d8f3dc;
-
-// $bg-main: #14213d
-// Transformação: 0x14213d
-
-// $bg-second: #081c15
-// Transformação: 0x081c15
-
-// $bg-third: #4a4e69
-// Transformação: 0x4a4e69

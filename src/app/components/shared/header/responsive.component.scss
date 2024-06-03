@@ -1,0 +1,37 @@
+@media (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+
+  li {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .nav-list-toggle {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  .toggler-position {
+    position: fixed;
+    height: 30px;
+    top: 1%;
+    right: 2%;
+    transform: translateX(-50%);
+    display: block;
+
+    .toggle-icon-open {
+      height: 35px;
+      content: url("../../../../assets/toggle-icon.png");
+    }
+
+    .toggle-icon-close {
+      height: 35px;
+      z-index: 10;
+      content: url("../../../../assets/toggle-close.png");
+    }
+  }
+}
