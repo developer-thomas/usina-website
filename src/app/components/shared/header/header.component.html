@@ -1,25 +1,32 @@
-<nav class="navbar navbar-expand-md bg-transparent">
+<nav>
   <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse top-menu" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Sobre Nós</a>
-        <a class="nav-link" href="#">Serviços</a>
-        <a class="nav-link" href="#">Projetos</a>
-        <a class="nav-link" href="#">Contato</a>
-      </div>
+    <div>
+      <button class="btn bg-transparent toggler-position">
+        <img
+          (click)="toggle()"
+          class="toggle-icon-open"
+          [ngClass]="{ 'toggle-icon-close': isCollapsed }"
+        />
+      </button>
+    </div>
+    <div>
+      <ul [ngClass]="{ 'nav-list-toggle': isCollapsed }" class="nav-list">
+        <li>
+          <a (click)="toggle()" href="#">Início</a>
+        </li>
+        <li>
+          <a (click)="toggle()" href="#about-section">Sobre Nós</a>
+        </li>
+        <li>
+          <a (click)="toggle()" href="#services-section">Serviços</a>
+        </li>
+        <li>
+          <a (click)="toggle()" href="#projects-section">Projetos</a>
+        </li>
+        <li>
+          <a (click)="toggle()" href="#contact-section">Contato</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
