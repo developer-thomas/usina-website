@@ -52,9 +52,14 @@
         cursor: pointer;
 
         img {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           margin: 1.2rem 1.2rem 1.2rem 0;
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: rotateZ(360deg);
+          }
         }
       }
     }
