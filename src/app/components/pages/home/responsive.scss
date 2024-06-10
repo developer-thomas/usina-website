@@ -1,27 +1,38 @@
 // Impede a quebra de layout do h1
-@media (min-width: 390px) {
-  .center-container__content .content__texts {
-    h1 {
-      font-size: 8rem;
-    }
-  }
-}
-
-@media (min-width: 564px) {
-  .center-container__content .content__texts {
-    h1 {
-      font-size: 13rem;
-    }
-  }
-}
-
-@media (max-width: 661px) {
+@media (min-width: 270px) {
   .center-container__content {
-    width: 90%;
-  }
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 
-  .content__texts {
-    width: 90%;
-    object-fit: contain;
+    .content__texts {
+      width: 90%;
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
+
+@media (min-width: 576px) {
+  .center-container__content {
+    .content__texts {
+      img {
+        width: 600px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 661px) {
+//   .content__texts {
+//     width: 90%;
+//     object-fit: contain;
+//   }
+// }

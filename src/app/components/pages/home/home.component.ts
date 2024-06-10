@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
       lowlightColor: 0x081c15,
       baseColor: 0x14213d,
       blurFactor: 0.48,
-      speed: 0.9,
-      zoom: 1.7,
+      speed: 3.8,
+      zoom: 4.0,
     });
   }
 }
