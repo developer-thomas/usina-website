@@ -17,19 +17,19 @@
 
   .toggler-position {
     position: fixed;
-    height: 30px;
     top: 1%;
-    right: 2%;
+    right: 1%;
     transform: translateX(-50%);
     display: block;
 
     .toggle-icon-open {
-      height: 35px;
+      width: 25px;
+
       content: url("../../../../assets/toggle-icon.png");
     }
 
     .toggle-icon-close {
-      height: 35px;
+      width: 25px;
       z-index: 10;
       content: url("../../../../assets/toggle-close.png");
     }
