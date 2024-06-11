@@ -1,5 +1,5 @@
-<nav data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
-  <div class="container-fluid">
+<nav>
+  <div>
     <div>
       <button class="btn bg-transparent toggler-position">
         <img
@@ -9,7 +9,7 @@
         />
       </button>
     </div>
-    <div>
+    <div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
       <ul [ngClass]="{ 'nav-list-toggle': isCollapsed }" class="nav-list">
         <li>
           <a (click)="toggle()" href="#">Início</a>
