@@ -1,6 +1,7 @@
 @import "../../../scss/fonts.scss";
 @import "../../../scss/colors.scss";
-// Animação para flutuação
+
+// Animação para flutuação da arrow down
 @keyframes floatUp {
   0% {
     transform: translateY(0); /* Começa sem deslocamento */
@@ -14,7 +15,7 @@
 }
 
 #home-section {
-  height: 85vh;
+  height: 84vh;
   width: 100%;
 }
 
@@ -25,9 +26,8 @@
   justify-content: center;
   align-items: center;
   background: $home-linear-gradient;
-  /* Esse height acima de 100 serve para criar o degrade entre o efeito de nuvens e a cor
-   para a próxima seção */
-  height: 86vh;
+  /* Esse height é 1vh acima da home, para criar o efeito degradê */
+  height: 85vh;
 }
 
 // Delimita os conteúdos do centro dentro de um container
@@ -68,11 +68,11 @@
 
 .arrow-down {
   animation: floatUp 2s ease-in-out infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   img {
-    width: 45px;
-    height: 50px;
+    margin: 35px 0;
+
+    width: 35px;
+    height: 40px;
   }
 }

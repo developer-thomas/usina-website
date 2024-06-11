@@ -1,9 +1,8 @@
-// Impede a quebra de layout do h1
 @media (min-width: 270px) {
   .center-container__content {
     height: 100%;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
@@ -29,10 +28,3 @@
     }
   }
 }
-
-// @media (min-width: 661px) {
-//   .content__texts {
-//     width: 90%;
-//     object-fit: contain;
-//   }
-// }
