@@ -10,6 +10,12 @@ $home-linear-gradient: linear-gradient(
   rgba(8, 28, 21, 0.1) 100%
 );
 
+$about-linear-gradient: linear-gradient(
+  180deg,
+  rgba(14, 30, 40, 1) 5%,
+  rgba(8, 28, 21.1)
+);
+
 $bg-gradient: radial-gradient(circle, $bg-main 0%, $bg-second 100%);
 
 // textos
