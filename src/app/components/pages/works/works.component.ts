@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { sample_services } from '../../../../services_data';
+import { sample_services } from 'src/app/data/services_data';
+
 import { ServicesType } from 'src/models/ServicesType';
 @Component({
   selector: 'app-works',
