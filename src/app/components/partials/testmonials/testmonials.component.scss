@@ -1,28 +1,31 @@
 @import "../../../scss/colors.scss";
-
+* {
+  margin: 0;
+}
 #testmonials-section {
   height: 70vh;
-  background-color: green;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: $text-secondary;
   background-color: $bg-second;
+  margin-top: 5rem;
 }
 
-// .carousel {
-//   width: 90%;
-// }
+.carousel {
+  margin-top: 5rem;
+}
 
 .carousel-inner {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  background-color: $bg-second;
 }
 
 .item {
   max-width: 60%;
-  margin: 0 auto;
+  margin: 5% auto;
 
   img {
     width: 50px;

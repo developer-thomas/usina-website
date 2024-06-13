@@ -18,3 +18,11 @@
     align-items: center;
   }
 }
+
+@media (max-width: 355px) {
+  .about-container__texts {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

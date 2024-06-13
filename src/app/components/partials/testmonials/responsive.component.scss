@@ -1,0 +1,30 @@
+@media (max-width: 375px) {
+  // #testmonials-section {
+  //   height: 100vh;
+  // }
+  #testmonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .carousel {
+    margin: 2rem 0;
+  }
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .carousel h1 {
+    font-size: 18px;
+  }
+  .item {
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}

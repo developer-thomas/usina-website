@@ -22,3 +22,8 @@ As grids quebram de 2 colunas para apenas 1
 ### $text-primary: #ffee32;
 
 ### $text-secondary: #d8f3dc;
+
+# Espaçamentos entre as seções
+
+5rem de margin-top de uma seção para outra
+h1 e p dos títulos tem margin: 40px 0;

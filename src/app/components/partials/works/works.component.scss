@@ -10,13 +10,12 @@
 
 .services-container__external {
   width: 80%;
-  margin: 2% auto;
+  margin: 5rem auto;
   height: 93%;
 }
 
 .services-container__info {
   width: 50%;
-  margin-top: 5%;
 }
 
 .services-container__texts {
@@ -27,11 +26,12 @@
   }
 
   h1 {
-    margin: 20px 0 20px 0;
+    margin: 40px 0;
   }
 
   p {
     color: $text-secondary;
+    margin: 40px 0;
   }
 }
 

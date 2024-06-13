@@ -11,10 +11,24 @@
   justify-content: center;
   align-items: flex-start;
   text-align: center;
+
+  margin-top: 5rem;
 }
 
 .projects-container__external {
   width: 80%;
+
+  h1 {
+    margin: 40px 0;
+  }
+
+  p {
+    margin: 40px 0;
+
+    strong {
+      color: $text-primary;
+    }
+  }
 }
 
 .projects-grid {

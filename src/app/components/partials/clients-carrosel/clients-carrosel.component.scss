@@ -1,11 +1,5 @@
 @import "../../../scss/colors.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -15,8 +9,9 @@
   }
 }
 
-body {
+section {
   background-color: #081c15;
+  margin-top: 5rem;
 }
 
 #clients-section {
@@ -33,6 +28,7 @@ body {
     color: $text-primary;
   }
 }
+
 .logos {
   padding: 60px 0;
   white-space: nowrap;

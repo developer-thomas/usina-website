@@ -15,13 +15,13 @@
   display: flex;
   flex-flow: row wrap;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 // Container que delimita as informações desta pagina
 .about-container__info {
   width: 50%;
-  margin-top: 7%;
+  margin-top: 5rem;
 }
 // Textos de cima
 .about-container__texts {
@@ -32,30 +32,14 @@
     color: $text-primary;
   }
   h1 {
-    margin: 20px 0 40px 0;
+    margin: 40px 0;
     font-size: 2.5rem;
   }
 
   p {
     font-size: 1.1rem;
-    margin: 20px 0 40px 0;
+    margin: 40px 0;
     color: $text-secondary;
-  }
-
-  h5 {
-    display: inline;
-    font-size: 1.7rem;
-
-    &::before {
-      content: "●";
-      margin-right: 10px;
-      color: $text-primary;
-    }
-    &::after {
-      content: "●";
-      margin-left: 10px;
-      color: $text-primary;
-    }
   }
 }
 
