@@ -1,18 +1,20 @@
-import { ServicesType } from './models/ServicesType';
+import { ServicesType } from '../../models/ServicesType';
+
 export const sample_services: ServicesType[] = [
   {
     id: 0,
     icon: './assets/services-icons/totem-icon.png',
     title: 'Totens',
     description:
-      'Totens personalizados para sua empresa feitos com materiais de qualidade',
+      'Totens personalizados com design exclusivo, ideais para destacar a sua marca.',
     tag: 'totens',
   },
   {
     id: 1,
     icon: './assets/services-icons/acm-icon.png',
     title: 'Revestimento ACM/ACP',
-    description: 'Revestimentos de ACM/ACP personalizados para sua empresa ',
+    description:
+      'Revestimentos em ACM/ACP com acabamento premium, perfeitos para fachadas modernas e resistentes.',
     tag: 'revestimento-acm-acp',
   },
   {
@@ -20,7 +22,7 @@ export const sample_services: ServicesType[] = [
     icon: './assets/services-icons/banner-icon.png',
     title: 'Fachadas ACM/ACP',
     description:
-      'Fachadas personalizados para sua empresa feitos com materiais de qualidade',
+      'Fachadas em ACM/ACP projetadas para oferecer durabilidade e estética, valorizando a imagem da sua empresa.',
     tag: 'fachadas-acm-acp',
   },
   {
@@ -28,7 +30,7 @@ export const sample_services: ServicesType[] = [
     icon: './assets/services-icons/fachada-externa-icon.png',
     title: 'Letreiros Externos',
     description:
-      'Letreiros Externos personalizados para sua empresa feitos com materiais de qualidade',
+      'Letreiros externos robustos e personalizados, ideais para reforçar a identidade visual do seu negócio.',
     tag: 'letreiros-externos',
   },
   {
@@ -36,15 +38,15 @@ export const sample_services: ServicesType[] = [
     icon: './assets/services-icons/neon-icon.png',
     title: 'Letras em Neon',
     description:
-      'Letras em Neon personalizados para sua empresa feitos com materiais de qualidade',
+      'Alta qualidade, perfeitas para criar uma atmosfera vibrante e atrativa para o seu estabelecimento.',
     tag: 'letras-neon',
   },
   {
     id: 5,
     icon: './assets/services-icons/banner.png',
-    title: 'Letreiros Internos PVC',
+    title: 'Letreiros Internos',
     description:
-      'Letreiros Internos PVC personalizados para sua empresa feitos com materiais de qualidade',
+      'Personalizados para proporcionar um visual elegante e profissional dentro do seu ambiente.',
     tag: 'letreiro-interno-pvc',
   },
 ];
