@@ -5,14 +5,3 @@ app-header {
   position: fixed;
   z-index: 20;
 }
-
-* {
-  font-family: $first-font;
-}
-
-.main {
-  max-width: 100%;
-  height: 100%;
-  background: $about-linear-gradient;
-  background-attachment: local;
-}
