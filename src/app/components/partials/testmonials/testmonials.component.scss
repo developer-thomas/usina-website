@@ -1,0 +1,39 @@
+@import "../../../scss/colors.scss";
+
+#testmonials-section {
+  height: 70vh;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $text-secondary;
+  background-color: $bg-second;
+}
+
+// .carousel {
+//   width: 90%;
+// }
+
+.carousel-inner {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.item {
+  max-width: 60%;
+  margin: 0 auto;
+
+  img {
+    width: 50px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+h1 {
+  color: $text-secondary;
+}
+
+h2 {
+  color: $text-primary;
+}
