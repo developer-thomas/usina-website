@@ -15,6 +15,8 @@ import { ClientsCarroselComponent } from './components/partials/clients-carrosel
 import { RootPageComponent } from './components/pages/root-page/root-page.component';
 import { WorkDetailComponent } from './components/pages/work-detail/work-detail.component';
 import { TestmonialsComponent } from './components/partials/testmonials/testmonials.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { LocationComponent } from './components/partials/location/location.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { TestmonialsComponent } from './components/partials/testmonials/testmoni
     RootPageComponent,
     WorkDetailComponent,
     TestmonialsComponent,
+    FooterComponent,
+    LocationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
