@@ -1,32 +1,28 @@
 @import "../../../scss/colors.scss";
 
 #projects-section {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-
   color: $text-secondary;
-  width: 100vw;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   text-align: center;
-
-  margin-top: 5rem;
 }
 
-.projects-container__external {
-  width: 80%;
+// delimita a largura padrão para as laterais e centraliza o container
+.projects-container {
+  &__external {
+    width: 80%;
+    margin: 5rem auto;
 
-  h1 {
-    margin: 40px 0;
-  }
+    h1 {
+      margin: 40px 0;
+    }
 
-  p {
-    margin: 40px 0;
+    p {
+      margin: 40px 0;
 
-    strong {
-      color: $text-primary;
+      strong {
+        color: $text-primary;
+      }
     }
   }
 }
@@ -34,18 +30,20 @@
 .projects-grid {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
 
   .grid-box {
-    margin: 1% 1% 1% 0;
+    // precisa ser alterado a partir de 320px
 
-    width: 32%;
+    flex: 1 1 calc(31.3% - 20px);
   }
 
   .grid-box__img {
     width: 100%;
-    height: 350px;
-    border-radius: 20px;
+    height: 20rem;
+    border-radius: 10px;
   }
 }
