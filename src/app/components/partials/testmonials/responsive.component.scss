@@ -1,3 +1,18 @@
+@media (max-width: 765px) {
+  #testmonials-section {
+    height: 90vh;
+  }
+
+  .item {
+    h2 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   // #testmonials-section {
   //   height: 100vh;
@@ -25,6 +40,12 @@
     }
     p {
       font-size: 13px;
+    }
+  }
+
+  .item {
+    img {
+      width: 100px;
     }
   }
 }
