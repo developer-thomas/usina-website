@@ -1,0 +1,20 @@
+#location-section {
+  height: 80vh;
+}
+
+.container-external {
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+
+    .map {
+      display: block;
+      width: 600px;
+      height: 600px;
+      border: 1px solid white;
+    }
+  }
+}
