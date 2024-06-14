@@ -1,17 +1,24 @@
 @media (max-width: 991px) {
   .projects-container__external {
     width: 90%;
-
+    // vai dar um wrap na grid de 3 para 2
     .grid-box {
-      width: 49%;
+      min-width: 48%;
     }
   }
 }
 
-@media (max-width: 576px) {
+// 768px diminuir a largura da img, ta mt larga
+@media (max-width: 768px) {
   .projects-container__external {
+    // vai dar um wrap na grid de 2 para 1
+
     .grid-box {
-      width: 99%;
+      min-width: 90%;
+      // aumenta a altura pra imagem não ficar achatada
+      img {
+        height: 30rem;
+      }
     }
   }
 }
