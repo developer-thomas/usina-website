@@ -1,4 +1,4 @@
-import { ServicesType } from '../../models/ServicesType';
+import { ServicesType } from '../models/ServicesType.interface';
 
 export const sample_services: ServicesType[] = [
   {
