@@ -10,9 +10,7 @@
     </div>
     <div class="projects-grid">
       <div *ngFor="let item of visibleProjects" class="grid-box">
-        <a routerLink="/projetos/{{ item.id }}">
-          <img class="grid-box__img" src="{{ item.image }}" alt="" />
-        </a>
+        <img class="grid-box__img" src="{{ item.image }}" alt="" />
       </div>
     </div>
     <button
