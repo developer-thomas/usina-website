@@ -5,7 +5,7 @@ import { RootPageComponent } from './components/pages/root-page/root-page.compon
 
 const routes: Routes = [
   {
-    path: 'servicos/:tag',
+    path: ':tag',
     component: WorkDetailComponent,
   },
   {
@@ -15,7 +15,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      scrollOffset: [0, 0],
+      anchorScrolling: 'enabled',
+    }),
+  ],
 })
 export class AppRoutingModule {}
