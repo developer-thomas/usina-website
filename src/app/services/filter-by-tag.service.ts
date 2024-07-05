@@ -1,26 +1,20 @@
 import { Injectable } from '@angular/core';
-import { sample_services } from '../data/services_data';
-import { ServicesType } from 'src/models/ServicesType';
+import { DetailsInterface } from '../models/Details.interface';
 import { Router } from '@angular/router';
+
+import { Details } from '../data/details_data';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FilterByTagService {
-  private data: ServicesType[] = sample_services;
+  private data: DetailsInterface[] = Details;
 
   constructor(private router: Router) {}
 
-  tagFilter(tag: string | null): ServicesType[] {
-    return this.data.filter((item) => tag === item.tag);
-
-    //   return this.data.filter((item) => {
-    //     if (tag === item.tag) {
-    //       return item;
-    //     } else {
-    //       return;
-    //     }
-    //   });
-    // }
+  tagFilter(tag: string | null): DetailsInterface[] {
+    return this.data.filter(
+      (item) => tag?.toLowerCase() === item.tag.toLowerCase()
+    );
   }
 }
