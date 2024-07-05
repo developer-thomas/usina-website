@@ -92,16 +92,8 @@
 // IMAGEM DA PESSOA NO PC A DIREITA
 .image-container {
   width: 50%;
-  height: 100vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .img-fluid {
-    max-width: 90%;
-    height: auto;
-    transform: scaleX(1);
-    object-fit: cover;
-    object-position: center;
-  }
 }
