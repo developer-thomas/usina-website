@@ -1,15 +1,14 @@
 @import "../../../scss/colors.scss";
-// * {
-//   margin: 0;
-// }
+@import "../../../scss/variables.scss";
 
 #testmonials-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: $text-secondary;
+
   background-color: $bg-second;
-  margin-top: 5rem;
+  margin: $section-margin;
 }
 
 .carousel {
@@ -20,7 +19,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: $bg-second;
 }
 
 .item {
@@ -29,7 +27,10 @@
 
   img {
     width: 150px;
+    border-radius: 50%;
+    border: 2px solid $text-primary;
     margin: 20px 0 20px 0;
+    background-size: cover;
   }
 }
 
