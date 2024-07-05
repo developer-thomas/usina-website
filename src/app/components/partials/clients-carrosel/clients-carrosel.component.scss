@@ -10,7 +10,7 @@
 }
 
 section {
-  background-color: #081c15;
+  background-color: $bg-second;
   margin-top: 5rem;
 }
 
@@ -58,11 +58,13 @@ section {
 
 .logos-slide {
   display: inline-block;
-  animation: 20s slide infinite linear;
+  animation: 20s slide linear infinite;
 }
 
 .logos-slide img {
-  height: 50px;
+  height: 130px;
+
+  border-radius: 10px;
   margin: 0 40px;
   background-color: white;
 }
