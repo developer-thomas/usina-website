@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Projects } from 'src/models/Projects';
+import { Projects } from 'src/app/models/Projects.interface';
 import projects_data from '../data/projects_data.json';
 @Injectable({
   providedIn: 'root',
