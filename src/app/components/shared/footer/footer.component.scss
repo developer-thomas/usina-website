@@ -1,10 +1,38 @@
-.footer {
+@import "../../../scss/colors.scss";
+
+.footer-container {
   background-color: black;
   height: 100%;
+  width: 100%;
   color: white;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  margin-top: 5rem;
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
+
+  img {
+    width: 80px;
+    height: 30px;
+  }
+
+  div {
+    padding: 10px;
+    text-align: left;
+  }
+}
+
+.developer {
+  p {
+    font-size: 12px;
+  }
 }
