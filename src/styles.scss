@@ -3,10 +3,34 @@
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
 @import "../src/app/scss/fonts.scss";
+@import "./app/scss/colors.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $first-font;
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-main;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $bg-second;
+  border-radius: 10px;
+  border: 3px solid $bg-main;
+  border: 1px solid $text-secondary;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken($bg-second, 10%);
 }
