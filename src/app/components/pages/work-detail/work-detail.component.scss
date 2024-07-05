@@ -1,0 +1,51 @@
+@import "../../../scss/colors.scss";
+
+#detail-section {
+  height: 100%;
+  background: $about-linear-gradient;
+  color: $text-secondary;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container__content {
+  width: 80%;
+  margin: 8rem auto;
+  text-align: center;
+  display: block;
+
+  h1 {
+    color: $text-primary;
+    margin-bottom: 20px;
+  }
+
+  .presentation {
+    margin: 5rem auto;
+  }
+
+  img {
+    width: 50%;
+    height: 600px;
+    border-radius: 10px;
+  }
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}

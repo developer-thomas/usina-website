@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+  .detail-container__content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-container {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 50%;
+      margin-bottom: 5rem;
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+}
