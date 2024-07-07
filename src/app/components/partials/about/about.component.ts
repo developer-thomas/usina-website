@@ -22,9 +22,4 @@ export class AboutComponent {
     this.translateX = percentX;
     this.translateY = percentY;
   }
-
-  // resetImage() {
-  //   this.translateX = 0;
-  //   this.translateY = 0;
-  // }
 }

@@ -1,20 +1,24 @@
+@import "../../../scss/colors.scss";
+@import "../../../scss/variables.scss";
+
 #location-section {
-  height: 80vh;
+  height: 100%;
+
+  h1,
+  p {
+    color: $text-secondary;
+  }
 }
 
 .container-external {
+  width: 80%;
+  margin-bottom: 5rem;
+
   &__info {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     gap: 50px;
-
-    .map {
-      display: block;
-      width: 600px;
-      height: 600px;
-      border: 1px solid white;
-    }
   }
 }

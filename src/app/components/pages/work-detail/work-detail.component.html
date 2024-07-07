@@ -1,1 +1,20 @@
-<div *ngFor="let item of work">{{ item.title }}</div>
+<section id="detail-section">
+  <div class="detail-container">
+    <div class="detail-container__content" *ngFor="let item of work">
+      <div class="presentation">
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.introduction }}</p>
+      </div>
+      <div class="info-container flex-fill">
+        <img class="img-fluid" [src]="item.imgPath" [alt]="item.title" />
+        <ul>
+          <h1 class="text-center">Vantagens</h1>
+          <li *ngFor="let advantage of item.advantages">
+            {{ advantage }}
+            <hr />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
