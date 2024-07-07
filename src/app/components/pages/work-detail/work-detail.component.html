@@ -1,11 +1,15 @@
 <section id="detail-section">
   <div class="detail-container">
     <div class="detail-container__content" *ngFor="let item of work">
-      <div class="presentation">
+      <div class="presentation" data-aos="fade-right" data-aos-duration="2000">
         <h1>{{ item.title }}</h1>
         <p>{{ item.introduction }}</p>
       </div>
-      <div class="info-container flex-fill">
+      <div
+        class="info-container flex-fill"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <img class="img-fluid" [src]="item.imgPath" [alt]="item.title" />
         <ul>
           <h1 class="text-center">Vantagens</h1>
