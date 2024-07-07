@@ -3,7 +3,11 @@
   <div class="about-container__external">
     <!-- container de informações -->
     <div class="about-container__info">
-      <div class="about-container__texts">
+      <div
+        class="about-container__texts"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h1>
           Transformamos suas <strong>IDEIAS</strong> em projetos
           <strong>REAIS</strong>
@@ -21,7 +25,11 @@
         </p>
       </div>
       <!-- Container de todas as boxes-->
-      <div class="about-container__boxes row">
+      <div
+        class="about-container__boxes row"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <!-- Caixa singular -->
         <!-- COLUNA 1 -->
         <div class="col-xl-6">
@@ -94,6 +102,8 @@
     <!-- container da imagem -->
     <div class="image-container" (mousemove)="moveImage($event)">
       <img
+        data-aos="fade-right"
+        data-aos-duration="2000"
         class="img-fluid imagem"
         [style.transform]="
           'translate(' + translateX + 'px, ' + translateY + 'px)'

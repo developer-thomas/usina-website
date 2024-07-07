@@ -1,6 +1,10 @@
 <section id="projects-section">
   <div class="projects-container__external">
-    <div class="projects-container__info">
+    <div
+      class="projects-container__info"
+      data-aos="fade-right"
+      data-aos-duration="2000"
+    >
       <h1>Explore nossos projetos</h1>
       <p>
         Na <strong>USINA</strong>, apresentamos uma coleção diversificada de
@@ -8,7 +12,7 @@
         comunicação visual. Nossos projetos destacados incluem:
       </p>
     </div>
-    <div class="projects-grid">
+    <div class="projects-grid" data-aos="fade-left" data-aos-duration="2000">
       <div *ngFor="let item of visibleProjects" class="grid-box">
         <img class="grid-box__img" src="{{ item.image }}" alt="" />
       </div>
