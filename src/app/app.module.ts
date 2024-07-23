@@ -17,6 +17,7 @@ import { WorkDetailComponent } from './components/pages/work-detail/work-detail.
 import { TestmonialsComponent } from './components/partials/testmonials/testmonials.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LocationComponent } from './components/partials/location/location.component';
+import { NotfoundComponent } from './components/pages/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { LocationComponent } from './components/partials/location/location.compo
     TestmonialsComponent,
     FooterComponent,
     LocationComponent,
+    NotfoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],

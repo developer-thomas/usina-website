@@ -1,6 +1,10 @@
 @import "./scss/colors.scss";
 @import "./scss/fonts.scss";
 
+* {
+  overflow-x: hidden;
+}
+
 app-header {
   position: fixed;
   z-index: 20;

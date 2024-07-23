@@ -14,12 +14,12 @@
         </p>
       </div>
     </div>
-    <div
-      class="services-box__external"
-      data-aos="fade-left"
-      data-aos-duration="2000"
-    >
-      <div class="services-box__grid">
+    <div class="services-box__external">
+      <div
+        class="services-box__grid"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div *ngFor="let works of services" class="grid-box">
           <img
             class="box-icon"
@@ -31,7 +31,7 @@
             {{ works.description }}
           </p>
           <div>
-            <a routerLink="/{{ works.tag }}">Saiba mais ➔</a>
+            <a routerLink="/services/{{ works.tag }}">Saiba mais ➔</a>
           </div>
         </div>
       </div>
