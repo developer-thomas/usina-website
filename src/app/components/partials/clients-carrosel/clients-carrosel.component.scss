@@ -1,17 +1,22 @@
-@import "../../../scss/colors.scss";
-
-@keyframes slide {
-  from {
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(calc(-200px * 8));
   }
 }
+
+@import "../../../scss/colors.scss";
 
 section {
   background-color: $bg-second;
   margin-top: 5rem;
+
+  h1 {
+    color: $text-primary;
+    margin-top: 3rem;
+  }
 }
 
 #clients-section {
@@ -23,48 +28,32 @@ section {
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
-
-  h1 {
-    color: $text-primary;
-  }
 }
 
-.logos {
-  padding: 60px 0;
-  white-space: nowrap;
+.slider {
+  height: 200px;
+  margin: auto;
   position: relative;
-  display: inline;
+  width: 90%;
+  display: grid;
+  place-items: center;
 }
 
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
+.slide-track {
+  display: flex;
+  width: calc(200px * 16);
+  animation: scroll 30s linear infinite;
 }
 
-.logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+.slide {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
 }
 
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 20s slide linear infinite;
-}
-
-.logos-slide img {
-  height: 130px;
-
+img {
+  width: 75%;
   border-radius: 10px;
-  margin: 0 40px;
-  background-color: white;
 }

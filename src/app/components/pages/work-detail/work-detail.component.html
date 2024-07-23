@@ -5,13 +5,15 @@
         <h1>{{ item.title }}</h1>
         <p>{{ item.introduction }}</p>
       </div>
-      <div
-        class="info-container flex-fill"
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
-        <img class="img-fluid" [src]="item.imgPath" [alt]="item.title" />
-        <ul>
+      <div class="info-container flex-fill">
+        <img
+          class="img-fluid"
+          [src]="item.imgPath"
+          [alt]="item.title"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        />
+        <ul data-aos="fade-up" data-aos-duration="2000">
           <h1 class="text-center">Vantagens</h1>
           <li *ngFor="let advantage of item.advantages">
             {{ advantage }}
